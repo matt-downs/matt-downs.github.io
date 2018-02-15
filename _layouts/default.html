@@ -8,9 +8,46 @@
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 </head>
 
 <body>
+	<div class="header py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h1 class="display-3">// Matt Downs</h1>
+					<p class="lead">A fast learner with extensive personal experience creating snappy modern web applications through modular and well documented code.</p>
+				</div>
+				<div class="col-md-4">
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://www.npmjs.com/~matt-downs">
+								<i class="fab fa-fw fa-npm"></i>
+								<span class="no-print">NPM</span>
+								<span class="only-print">npmjs.com/~matt-downs</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/matt-downs">
+								<i class="fab fa-fw fa-github"></i>
+								<span class="no-print">GitHub</span>
+								<span class="only-print">github.com/matt-downs</span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/hiremattdowns">
+								<i class="fab fa-fw fa-linkedin"></i>
+								<span class="no-print">LinkedIn</span>
+								<span class="only-print">linkedin.com/in/hiremattdowns</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
     <div class="container">
         {{ content }}
     </div>

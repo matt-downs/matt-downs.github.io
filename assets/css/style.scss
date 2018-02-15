@@ -1,7 +1,42 @@
 ---
 ---
 
+$accent-color: #0077ff;
 .header {
-    background-color: #0000ff;
+    background-color: $accent-color;
     color: #fff;
+
+    a {
+        color: #fff;
+    }
+    
+}
+
+h2 {
+    color: $accent-color;
+}
+
+// Only show the dotted divider on md+ viewports
+@media (min-width: 768px) {
+    .left-divider {
+        border-left: #0077ff dashed 1px;
+    }
+}
+
+// Print logic 
+.only-print {
+    display: none;
+}
+
+.no-print {
+    display: unset;
+}
+
+@media print {
+    .only-print {
+        display: unset;
+    }
+    .no-print {
+        display: none;
+    }
 }

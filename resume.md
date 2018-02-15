@@ -1,4 +1,7 @@
-[layout]: # (This may be the most platform independent comment)
+---
+layout: default
+title: Matt Downs
+---
 
 <h1>Matt Downs</h1>
 <p class="lead">A fast learner with extensive personal experience creating snappy modern web applications through modular

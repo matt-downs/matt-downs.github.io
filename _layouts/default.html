@@ -50,7 +50,29 @@
 	
     <div class="container">
         {{ content }}
-    </div>
+	</div>
+
+	<script>
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * Math.floor(max));
+		}
+
+		var colours = [
+			'#ff2828',
+			'#ff6c28',
+			
+			'#2966ff',
+			'#7728ff'
+		];
+		var colour = colours[getRandomInt(colours.length)]; 
+
+		document.querySelector('.header').style.backgroundColor = colour;
+		document.querySelectorAll('h2').forEach((el) => {
+			el.style.color = colour;
+		});
+		document.querySelector('.left-divider').style.borderLeftColor = colour;
+
+	</script>
 </body>
 
 </html>

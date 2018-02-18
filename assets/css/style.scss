@@ -1,17 +1,14 @@
 ---
 ---
-
 $accent-color: #0077ff;
 .header {
     background-color: $accent-color;
     background-size: cover;
     background-position: center;
     color: #fff;
-
     a {
         color: #fff;
     }
-    
 }
 
 h2 {
@@ -19,6 +16,7 @@ h2 {
 }
 
 a {
+    color: $accent-color;
     text-decoration: underline;
 }
 

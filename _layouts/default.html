@@ -49,24 +49,6 @@
 	</div>
 
 	<script>
-		function getRandomInt(max) {
-			return Math.floor(Math.random() * Math.floor(max));
-		}
-
-		var colours = [
-			'#ff2828',
-			'#ff6c28',
-			'#2966ff',
-			'#7728ff'
-		];
-		var colour = colours[getRandomInt(colours.length)]; 
-
-		document.querySelector('.header').style.backgroundColor = colour;
-		document.querySelectorAll('h2, .content a').forEach((el) => {
-			el.style.color = colour;
-		});
-		document.querySelector('.left-divider').style.borderLeftColor = colour;
-
 		// Pizza lol
 		document.querySelector('#pizza').addEventListener('click', function(e) {
 			document.querySelector('.header').style.backgroundImage = 'url(https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/115/213/179267699.jpg)';

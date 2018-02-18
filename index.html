@@ -2,7 +2,7 @@
 layout: default
 title: Matt Downs
 ---
-<div class="row">
+<div class="row content">
     <div class="col-md-8 pt-5">
         <h2>About me</h2>
         <p>Software developer seeking further experience in the professional field. I have a keen interest in modern web technologies and my current passions include creating feature-packed web apps, compatible with a wide range of devices. My love of exercise drives me to regularly attend and volunteer at parkrun events around my local area. I work well in a team and enjoy getting to know the people I work with. I crave a good challenge and I am always striving to expand my knowledge and techniques for the future.</p>
@@ -16,10 +16,32 @@ title: Matt Downs
         <p>I occasionally provide general tech support for a few small and medium sized businesses. Jobs generally involve troubleshooting or configuration of software and hardware. Although this job is quite rewarding, I am looking for something that offers not only more regular work, but also something that will challenge me and broaden my skills in the field of software development.</p>
 
         <h2>Education</h2>
-        <h3>Queensland University of Technology (QUT), Brisbane City — Bachelor of Information Technology (Computer Science) Graduating mid 2017</h3>
+        <h3 class="mb-0">Bachelor of Information Technology</h3>
+        <span class="text-muted">Queensland University of Technology, Brisbane City - Graduated mid 2017</span>
         <p>Favorite units include “Software Development”, “Cloud Computing”, “High Performance and Parallel Computing”, “Microprocessors and Digital Systems” and “Mobile Application Development”.</p>
 
         <h2>Personal projects</h2>
+
+        <h3 class="mb-0">neto-api</h3>
+        <span class="text-muted">#npm #typescript #mocha</span>
+        <p class="mb-0">A promise based Neto API client for Node, built in TypeScript and compiled to JavaScript.</p>
+        <ul class="list-unstyled">
+            <li>
+                <a href="https://www.npmjs.com/package/neto-api">
+                    <i class="fab fa-fw fa-npm"></i>
+                    <span class="no-print">Check it out</span>
+                    <span class="only-print">npmjs.com/package/neto-api</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/matt-downs/neto-api-node">
+                    <i class="fab fa-fw fa-github"></i>
+                    <span class="no-print">View the source</span>
+                    <span class="only-print">github.com/matt-downs/neto-api-node</span>
+                </a>
+            </li>
+        </ul>
+
         <h3>Oneji — Mobile application and backend (closed source)</h3>
         <p>The aim of this project was to create a fun mobile and web app for users to share posts, and react to other posts with an Emoji. This project uses the Ionic 2 framework on the client side and the HAPI Node.JS framework for the server side. The server is hosted on Amazon’s Elastic Beanstalk platform and hosts a simple JSON REST API for communication with the client. Data is stored using Amazon DynamoDB and Amazon S3 is used to store images. This app is currently a work in progress as I just work on it in my spare time.</p>
         <h3>QUT Linker — Google Chrome Extension</h3>
@@ -36,7 +58,7 @@ title: Matt Downs
             <li>Coffee</li>
             <li>Running and fitness</li>
             <li>Photography</li>
-            <li>Burgers, pizza and beer</li>
+            <li>Burgers, <span id="pizza">pizza</span> and beer</li>
             <li>Dogs</li>
         </ul>
 
@@ -76,19 +98,12 @@ title: Matt Downs
             <li>Node.js</li>
             <li>B@SE (proprietary)</li>
             <li>CSS, SCSS &amp; SASS</li>
-            <li>C#</li>
-            <li>Swift</li>
-            <li>PHP</li>
-            <li>Java</li>
             <li>HTML</li>
-            <li>C</li>
-            <li>C++</li>
-            <li>Arduino</li>
         </ul>
 
         <h2>Paradigm experience</h2>
         <ul>
-            <li>Microservices!</li>
+            <li>Stateless microservices!</li>
             <li>OOP, Imperative &amp; Functional programming</li>
             <li>Reactive programming</li>
             <li>Parallel computing</li>

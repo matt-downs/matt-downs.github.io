@@ -15,35 +15,31 @@
 	<div class="header py-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
-					<h1 class="display-3">// Matt Downs</h1>
-					<p class="lead">A fast learner with extensive personal experience creating snappy modern web applications through modular and well documented code.</p>
-				</div>
-				<div class="col-md-4">
-					<ul class="list-unstyled">
-						<li>
-							<a href="https://github.com/matt-downs" target="_blank">
-								<i class="fab fa-fw fa-github"></i>
-								<span class="no-print">GitHub</span>
-								<span class="only-print">github.com/matt-downs</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.npmjs.com/~matt-downs" target="_blank">
-								<i class="fab fa-fw fa-npm"></i>
-								<span class="no-print">NPM</span>
-								<span class="only-print">npmjs.com/~matt-downs</span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/hiremattdowns" target="_blank">
-								<i class="fab fa-fw fa-linkedin"></i>
-								<span class="no-print">LinkedIn</span>
-								<span class="only-print">linkedin.com/in/hiremattdowns</span>
-							</a>
-						</li>
-					</ul>
-				</div>
+				<h1 class="col-12 display-3">// Matt Downs</h1>
+				<p class="col-md-8 lead">A fast learner with extensive personal experience creating snappy modern web applications through modular and well documented code.</p>
+				<ul class="col-md-4 list-unstyled">
+					<li>
+						<a href="https://github.com/matt-downs" target="_blank">
+							<i class="fab fa-fw fa-github"></i>
+							<span class="no-print">GitHub</span>
+							<span class="only-print">github.com/matt-downs</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.npmjs.com/~matt-downs" target="_blank">
+							<i class="fab fa-fw fa-npm"></i>
+							<span class="no-print">NPM</span>
+							<span class="only-print">npmjs.com/~matt-downs</span>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/hiremattdowns" target="_blank">
+							<i class="fab fa-fw fa-linkedin"></i>
+							<span class="no-print">LinkedIn</span>
+							<span class="only-print">linkedin.com/in/hiremattdowns</span>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -60,17 +56,21 @@
 		var colours = [
 			'#ff2828',
 			'#ff6c28',
-			
 			'#2966ff',
 			'#7728ff'
 		];
 		var colour = colours[getRandomInt(colours.length)]; 
 
 		document.querySelector('.header').style.backgroundColor = colour;
-		document.querySelectorAll('h2').forEach((el) => {
+		document.querySelectorAll('h2, .content a').forEach((el) => {
 			el.style.color = colour;
 		});
 		document.querySelector('.left-divider').style.borderLeftColor = colour;
+
+		// Pizza lol
+		document.querySelector('#pizza').addEventListener('click', function(e) {
+			document.querySelector('.header').style.backgroundImage = 'url(https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/115/213/179267699.jpg)';
+		});
 
 	</script>
 </body>

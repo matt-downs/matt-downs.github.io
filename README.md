@@ -1,1 +1,2 @@
-# [Check it out y'all!](https://matt-downs.github.io/resume/)
+# Resume
+## [Check it out y'all!](https://matt-downs.github.io/)

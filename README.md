@@ -1,2 +1,1 @@
-# Resume
-## [Check it out y'all!](https://matt-downs.github.io/)
+# [My digital resume](https://matt-downs.github.io/)

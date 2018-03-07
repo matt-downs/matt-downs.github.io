@@ -12,12 +12,17 @@
 </head>
 
 <body>
-	<div class="header py-5">
+	<div class="header py-4">
 		<div class="container">
 			<div class="row">
 				<h1 class="col-12 display-3">// Matt Downs</h1>
-				<p class="col-md-8 lead">A fast learner with extensive personal experience creating snappy modern web applications through modular and well documented code.</p>
-				<ul class="col-md-4 list-unstyled">
+				<div class="col-md-8">
+					<p class="lead mb-0">A fast learner with extensive personal experience creating snappy modern web applications through modular and well documented code.</p>
+					<div class="only-print">
+						<p class="small mt-3 mb-0">Printed on <span id="current-date"></span>, view the latest version at <a href="https://matt-downs.github.io" target="_blank">matt-downs.github.io</a></p>		
+					</div>
+				</div>
+				<ul class="col-md-4 mb-0 list-unstyled">
 					<li>
 						<a href="https://github.com/matt-downs" target="_blank">
 							<i class="fab fa-fw fa-github"></i>
@@ -49,6 +54,8 @@
 	</div>
 
 	<script>
+		var d = new Date();
+		document.querySelector('#current-date').textContent = d.toDateString();
 		// Pizza lol
 		document.querySelector('#pizza').addEventListener('click', function(e) {
 			document.querySelector('.header').style.backgroundImage = 'url(https://img.aws.livestrongcdn.com/ls-article-image-673/ds-photo/getty/article/115/213/179267699.jpg)';

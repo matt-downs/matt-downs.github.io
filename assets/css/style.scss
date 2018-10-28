@@ -24,7 +24,7 @@ a {
 // Only show the dotted divider on md+ viewports
 @media (min-width: 768px) {
     .left-divider {
-        border-left: #0077ff dashed 1px;
+        border-left: $accent-color dashed 1px;
     }
 }
 

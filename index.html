@@ -50,10 +50,10 @@ title: Matt Downs
             server module because they offer a ready-made solution for Lambda. This was hooked up to DynamoDB for the
             data store, meaning that the backend of the service should technically scale as much as my budget allows
             for.</p>
-        <p>For the frontend of the service, I went with React because its bascially the industry standard now. I used
+        <p>For the frontend of the service, I went with React because it is basically the industry standard now. I used
             the Apollo module to handle communication between the components and the GraphQL backend. Apollo also
             offers a local state management plugin which I decided to use instead of Redux.</p>
-        <p>I'm now a massive advocate of GraphQL and Apollo - the whole stack comminucates seamlessly and write's its
+        <p>I'm now a massive advocate of GraphQL and Apollo - the whole stack communicates seamlessly and write's its
             own API documentation based on the schema of the data. Each component in the frontend only queries the data
             it needs, and Apollo handles all the request batching and caching silently in the background.</p>
 

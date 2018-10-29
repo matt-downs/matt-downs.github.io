@@ -38,6 +38,27 @@ title: Matt Downs
 
         <div class="row">
             <div class="col-md-8">
+                <h3 class="mb-0">Finance thingy (working title)</h3>
+                <span class="text-muted">#react #apollo #aws #lambda #graphql #dynamodb</span>
+            </div>
+        </div>
+        <p>Call me cheap, but I wanted to roll my own budget tracker instead of pay $7 a month to use an existing
+            solution. I also enjoy working on projects in my free time and I thought it would be great for my
+            experience too.</p>
+        <p>I wanted to craft the backend of the software on AWS Lambda, because of it's awesome scalability and also
+            to get to know it's quirks. I decided I wanted to use GraphQL instead of REST, and I went with the Apollo
+            server module because they offer a ready-made solution for Lambda. This was hooked up to DynamoDB for the
+            data store, meaning that the backend of the service should technically scale as much as my budget allows
+            for.</p>
+        <p>For the frontend of the service, I went with React because it is basically the industry standard now. I used
+            the Apollo module to handle communication between the components and the GraphQL backend. Apollo also
+            offers a local state management plugin which I decided to use instead of Redux.</p>
+        <p>I'm now a massive advocate of GraphQL and Apollo - the whole stack communicates seamlessly and write's its
+            own API documentation based on the schema of the data. Each component in the frontend only queries the data
+            it needs, and Apollo handles all the request batching and caching silently in the background.</p>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3 class="mb-0">neto-api — Node module</h3>
                 <span class="text-muted">#npm #typescript #mocha</span>
             </div>
@@ -58,34 +79,8 @@ title: Matt Downs
                 </li>
             </ul>
         </div>
-        <p>A promise based Neto API client for Node, built in TypeScript and compiled to JavaScript. And my first NPM
-            package!</p>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="mb-0">Friendly Frame</h3>
-                <span class="text-muted">#typescript #angular #aws</span>
-            </div>
-            <ul class="list-unstyled col-md-4">
-                <li>
-                    <a href="https://www.friendlyfra.me" target="_blank">
-                        <i class="fab fa-fw fa-internet-explorer"></i>
-                        <span class="no-print">Project landing page</span>
-                        <span class="only-print">friendlyfra.me</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <p>This is a personal (and massive) project of mine that I have been working on for a while now. The aim of the
-            project is to make it easier for any business to manage multiple remote informational displays from a
-            central platform. The remote screens can show anything, from digital store signage to business metric
-            displays - Friendly Frame is simply a platform to manage and monitor these devices.</p>
-        <p>Although I have engineered the entire platform stack, I would say that I most enjoy working on the backend
-            infrastructure of this project. In a nutshell, it is a Node app written in TypeScript that runs a REST API
-            consumed by the rest of the platform. The backend currently runs as an auto-scaling Elastic Beanstalk
-            application on AWS, but in the future I would love to migrate the entire app to run serverless using AWS
-            Lambda functions. I also plan on looking into Terraform to generate the platform's AWS infrastructure as I
-            would love to have this under source control.</p>
+        <p>A promise based Neto API client for Node, built in TypeScript and slathered with unit tests. And my first
+            NPM package!</p>
 
         <div class="row">
             <div class="col-md-8">

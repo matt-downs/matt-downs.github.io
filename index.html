@@ -38,6 +38,27 @@ title: Matt Downs
 
         <div class="row">
             <div class="col-md-8">
+                <h3 class="mb-0">Finance thingy (working title)</h3>
+                <span class="text-muted">#react #apollo #aws #lambda #graphql #dynamodb</span>
+            </div>
+        </div>
+        <p>Call me cheap, but I wanted to roll my own budget tracker instead of pay $7 a month to use an existing
+            solution. I also enjoy working on projects in my free time and I thought it would be great for my
+            experience too.</p>
+        <p>I wanted to craft the backend of the software on AWS Lambda, because of it's awesome scalability and also
+            to get to know it's quirks. I decided I wanted to use GraphQL instead of REST, and I went with the Apollo
+            server module because they offer a ready-made solution for Lambda. This was hooked up to DynamoDB for the
+            data store, meaning that the backend of the service should technically scale as much as my budget allows
+            for.</p>
+        <p>For the frontend of the service, I went with React because its bascially the industry standard now. I used
+            the Apollo module to handle communication between the components and the GraphQL backend. Apollo also
+            offers a local state management plugin which I decided to use instead of Redux.</p>
+        <p>I'm now a massive advocate of GraphQL and Apollo - the whole stack comminucates seamlessly and write's its
+            own API documentation based on the schema of the data. Each component in the frontend only queries the data
+            it needs, and Apollo handles all the request batching and caching silently in the background.</p>
+
+        <div class="row">
+            <div class="col-md-8">
                 <h3 class="mb-0">neto-api — Node module</h3>
                 <span class="text-muted">#npm #typescript #mocha</span>
             </div>
@@ -58,16 +79,8 @@ title: Matt Downs
                 </li>
             </ul>
         </div>
-        <p>A promise based Neto API client for Node, built in TypeScript and compiled to JavaScript. And my first NPM
-            package!</p>
-
-        <div class="row">
-            <div class="col-md-8">
-                <h3 class="mb-0">Finance thingy (working title)</h3>
-                <span class="text-muted">#react #apollo #aws #lambda #graphql #dynamodb</span>
-            </div>
-        </div>
-        <p></p>
+        <p>A promise based Neto API client for Node, built in TypeScript and slathered with unit tests. And my first
+            NPM package!</p>
 
         <div class="row">
             <div class="col-md-8">
